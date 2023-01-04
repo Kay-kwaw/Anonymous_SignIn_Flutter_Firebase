@@ -1,6 +1,4 @@
 import 'package:anonsignin/authenticate/auth.dart';
-import 'package:anonsignin/models/user.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
@@ -62,7 +60,7 @@ class _SignInState extends State<SignIn> {
                               ),
                             ),
                           ]
-                          )
+                          ),
                     ]
                     )
                     )
