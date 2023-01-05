@@ -1,8 +1,6 @@
 import 'package:anonsignin/authenticate/authentification.dart';
 import 'package:anonsignin/homes/home.dart';
 import 'package:anonsignin/models/user.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-// ignore: implementation_imports
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:provider/provider.dart';
 
@@ -15,7 +13,7 @@ class Wrapper extends StatelessWidget {
     final user = Provider.of<Users?>(context);
 
     if (user == null) {
-      return Authenticate();
+      return const Authenticate();
     } else {
       return Home();
     }
